@@ -28,7 +28,7 @@ public class ValidacoesStringTests
         var textoProcurado = "qualquer";
 
         // Act
-        var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
+        bool resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
         Assert.True(resultado);
@@ -42,7 +42,7 @@ public class ValidacoesStringTests
         var textoProcurado = "teste";
 
         // Act
-        var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
+        bool resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
         Assert.False(resultado);
@@ -56,7 +56,7 @@ public class ValidacoesStringTests
         var textoProcurado = "procurado";
 
         // Act
-        var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
+        bool resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
 
         // Assert
         Assert.True(resultado);

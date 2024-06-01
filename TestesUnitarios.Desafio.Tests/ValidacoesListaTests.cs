@@ -28,7 +28,7 @@ public class ValidacoesListaTests
         var numeroParaProcurar = 9;
 
         // Act
-        var resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
+        bool resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
 
         // Assert
         Assert.True(resultado);
@@ -42,7 +42,7 @@ public class ValidacoesListaTests
         var numeroParaProcurar = 10;
 
         // Act
-        var resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
+        bool resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
 
         // Assert
         Assert.False(resultado);
